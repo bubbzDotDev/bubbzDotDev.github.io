@@ -1,0 +1,166 @@
+h1, h3 {
+    color: #101E3F;
+    text-align: center;
+    background-color: #F78620;
+    text-transform: uppercase;
+    font-family: Anton, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #101E3F;
+}
+
+#nav a:hover {
+    color: #F78620;
+    background-color: #101E3F;
+    padding-left: 5px;
+    padding-right: 3px;
+    border-radius: 10px;
+}
+
+#bot {
+    min-width: 20%;
+    max-width: 200px;
+    text-align: center;
+}
+
+#main p, #main h2 {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+#header {
+    background-color: #F78620;
+}
+
+#header img {
+    width: 100%;
+    margin: 0px;
+}
+
+#bfd img {
+    width: 80%;
+    max-width: 400px;
+}
+
+body {
+    font-family: "Roboto Condensed", Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.button img {
+    border-radius: 15px;
+    min-width: 200px;
+    width: 50%;
+    max-width: 400px;
+}
+
+#window {
+    margin: 0px;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+#small-image {
+    display: flex;
+}
+
+#medium-image {
+    display: none;
+}
+
+#large-image {
+    display: none;
+}
+
+@media (min-width: 235px) {
+    #small-image {
+        display: none;
+    }
+    #medium-image {
+        display: flex;
+    }
+    #large-image {
+        display: none;
+    }
+}
+
+@media (min-width: 701px) {
+    #small-image {
+        display: none;
+    }
+    #medium-image {
+        display: none;
+    }
+    #large-image {
+        display: flex;
+    }
+}
+
+.slider img {
+    animation: move 20s infinite;
+    min-width: 100%;
+    width: 100%;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+
+    40% {
+        transform: translateX(-100%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(-300%);
+    }
+}
+
+section {
+    padding: 15px;
+}
+
+#commands div {
+    border: 3px solid #101E3F;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+#commands ul {
+    list-style-type: none;
+    
+}
+
+#video div {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer {
+    height: 85px;
+    background-color: #F78620;
+    color: #101E3F;
+    text-align: center;
+    width: 100%;
+}
+
+#footer img {
+    height: 80px;
+}
