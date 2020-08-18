@@ -18,4 +18,4 @@ loginButton.addEventListener("click", (e) => {
     }
 })
 
-document.getElementById('addName').innerText = `You did it ${username}! You logged in!`;
+
