@@ -12,13 +12,13 @@ h1, h3 {
 a {
     text-decoration: none;
     color: #101E3F;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 #nav a:hover {
     color: #F78620;
     background-color: #101E3F;
-    padding-left: 5px;
-    padding-right: 3px;
     border-radius: 10px;
 }
 
@@ -164,3 +164,88 @@ section {
 #footer img {
     height: 80px;
 }
+
+#main-holder {
+    margin: 15px auto;
+    width: 50%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 3px solid #101E3F;
+    
+}
+
+#login-header {
+    text-align: center;
+}
+
+#login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #login-error-msg {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .login-form-field::placeholder {
+    color: #3a3a3a;
+  }
+
+  .login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+
+  #login-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #101E3F;
+    color: #F78620;
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+  }
+
+  #success {
+        margin: 15px auto;
+        width: 50%;
+        height: 70%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        border: 3px solid #101E3F;
+        padding: 15px;
+  }
+
+  #success img {
+      width: 50%;
+  }
