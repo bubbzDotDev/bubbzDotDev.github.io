@@ -244,6 +244,8 @@ section {
         align-items: center;
         border: 3px solid #101E3F;
         padding: 15px;
+        text-align: center;
+        display: none;
   }
 
   #success img {

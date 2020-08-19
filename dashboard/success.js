@@ -1,1 +1,0 @@
-document.getElementById('addName').innerText = `You did it ${username}! You're logged in!`;

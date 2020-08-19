@@ -4,15 +4,21 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value;
+    const username = (loginForm.username.value).toLowerCase();
     const password = loginForm.password.value;
 
+    function login() {
+        document.getElementById("main-holder").style = "display: none";
+        document.getElementById("success").style = "display: block";
+        document.getElementById('addName').innerHTML = `You did it <strong>${username}</strong>! You're logged in!`;
+    }
+
     if (username === "chris" && password === "vitRocks") {
-        location.href = "success.html";
+        login();
     } else if (username === "brett" && password === "vitRocks") {
-        location.href = "success.html";
+        login();
     } else if (username === "daniel" && password === "vitRocks") {
-        location.href = "success.html";
+        login();
     } else {
         loginErrorMsg.style.opacity = 1;
     }
