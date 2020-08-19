@@ -20,6 +20,8 @@ loginButton.addEventListener("click", (e) => {
         login();
     } else if (username === "daniel" && password === "vitRocks") {
         login();
+    } else if (username === "joe" && password === "test") {
+        login();
     } else {
         loginErrorMsg.style.opacity = 1;
     }
