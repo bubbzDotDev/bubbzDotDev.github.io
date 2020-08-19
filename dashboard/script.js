@@ -4,12 +4,13 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = (loginForm.username.value).toLowerCase();
+    let username = (loginForm.username.value).toLowerCase();
     const password = loginForm.password.value;
 
     function login() {
         document.getElementById("main-holder").style = "display: none";
         document.getElementById("success").style = "display: block";
+        username = username.charAt(0).toUpperCase() + username.slice(1);
         document.getElementById('addName').innerHTML = `You did it <strong>${username}</strong>! You're logged in!`;
     }
 

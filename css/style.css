@@ -168,6 +168,7 @@ section {
 #main-holder {
     margin: 15px auto;
     width: 50%;
+    max-width: 300px;
     height: 70%;
     display: grid;
     justify-items: center;
